@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lits of Purchase</title>
+
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif; 
+            background:#D9E7E3 ;
+        }
+
+        #list li{
+            font-style: italic;
+        }
+                
+    </style>    
+
+</head>
+<body>
+    
+    <h1>Master Grocery List</h1><hr>
+
+    <!-- ========================================= -->
+
+    <h2>Types of Grocery that should be stored at home</h2>
+
+    <ul>
+        <li>Bakery and Bread</li>
+        <li>Meat and Seafood</li>
+        <li>Pasta and Rice</li>
+        <li>Oils, Sauces</li>
+        <li>Soups and Canned Goods</li>
+    </ul>
+
+    <!-- ========================================= --> <hr>
+
+    <h3>What should I buy today</h3>
+
+    <ol>
+        <li>Fruits</li>
+            <ol id="list">
+                <li>Apples</li>
+                <li>Pears</li>
+                <li>Bananas</li>
+            </ol>
+        <li>Dairy</li>
+            <ol id="list">
+                <li>Milk</li>
+                <li>Butter</li>
+                <li>Eggs</li>
+                <li>Sour Cream</li>
+                <li>Yougurt</li>
+            </ol>
+        <li>Spices</li>
+            <ol id="list">
+                <li>Salt</li>
+                <li>Pepper</li>
+            </ol>
+        <li>Vegetables</li>
+            <ol id="list">
+                <li>Carrots</li>
+                <li>Lettuce</li>
+                <li>Onions</li>
+            </ol>
+        <li>Pet Items</li>
+            <ol id="list">
+                <li>Dog Food</li>
+                <li>Cat Food</li>
+            </ol>
+    </ol>
+
+    <!-- ========================================= --> <hr>
+
+    <h3>What have I bought today?</h3>
+    
+    <form action="action_page.php">
+        <label for="Apples">Apples</label>
+        <input type="checkbox" id="Apples" name="Apples"><br>
+
+        <label for="Bananas">Bananas</label>
+        <input type="checkbox" id="Bananas" name="Bananas"><br>
+
+        <label for="Milk">Milk</label>
+        <input type="checkbox" id="Milk" name="Milk"><br>
+
+        <label for="Onions">Onions</label>
+        <input type="checkbox" id="Onions" name="Onions"><br>
+
+        <label for="CatFood">Cat Food</label>
+        <input type="checkbox" id="CatFood" name="CatFood"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- ========================================= --> <hr>
+
+    <h3>What food is better for health?</h3>
+
+    <form action="action_page_2.php">
+        <div>
+            <label for="Pears">Pears</label>
+            <input type="radio" id="Pears" Name="Fruits">  
+    
+            <label for="Eggs">Eggs</label>
+            <input type="radio" id="Eggs" Name="Fruits">
+    
+            <label for="Carrots">Carrots</label>
+            <input type="radio" id="Carrots" Name="Fruits">
+    
+            <label for="Lettuce">Lettuce</label>
+            <input type="radio" id="Lettuce" Name="Fruits">
+        </div>
+    </form>
+    
+
+    
+</body>
+</html>
+
